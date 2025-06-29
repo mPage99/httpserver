@@ -30,9 +30,10 @@ httpserver/
 
 ## 🔧 Setup Instructions
 
-1. Install dependencies:bash npm install
+1. Install dependencies:
 ``` 
-
+bash npm install
+```
 2. Run the server:
 ```
 bash npm start
