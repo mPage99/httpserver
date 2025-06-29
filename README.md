@@ -17,7 +17,20 @@ A lightweight, TypeScript-based HTTP server implementation built from scratch us
 - Native `net` module for TCP connections
 - Custom HTTP protocol implementation
 - Modern ES modules
+- 
+## 🚧 Coming Soon
 
+Planned features and improvements to expand the server's functionality:
+
+- 🧭 Route matching for dynamic paths (e.g. `/`, `/about`, `/contact`)
+- ❌ 404 and 405 status code handling
+- 🗂 Static file serving (HTML, CSS, JS) from a `public/` directory
+- 🔍 Query parameter parsing (`/hello?name=Mike`)
+- 🔀 Method-based routing support (`GET`, `POST`, etc.)
+- 🔐 Simulated middleware-style request handling (e.g. logging, auth stubs)
+- 🧪 Unit tests for core modules (`Request`, `Response`, routing)
+
+Stay tuned as the project evolves into a more fully-featured web server.
 ## 📦 Project Structure
 ```
 httpserver/
