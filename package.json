@@ -1,0 +1,17 @@
+{
+  "name": "ts_exercises",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@types/node": "^24.0.4",
+    "tslint": "^5.20.1",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "make": "./node_modules/.bin/tsc && node ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
