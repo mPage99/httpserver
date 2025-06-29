@@ -19,7 +19,14 @@ A lightweight, TypeScript-based HTTP server implementation built from scratch us
 - Modern ES modules
 
 ## 📦 Project Structure
-httpserver/ ├── src/ │ ├── index.ts # Main server entry point │ ├── Request.ts # HTTP request parsing │ └── Response.ts # HTTP response generation ├── package.json ├── tsconfig.json └── tslint.json
+httpserver/
+├── src/
+│   ├── index.ts           # Main server entry point
+│   ├── Request.ts         # HTTP request parsing logic (RequestObjI, RequestObj)
+│   └── Response.ts        # HTTP response generation (generateResponse)
+├── package.json           # Node dependencies and scripts
+├── tsconfig.json          # TypeScript configuration
+└── tslint.json            # Linting rules
 
 ## 🔧 Setup Instructions
 
