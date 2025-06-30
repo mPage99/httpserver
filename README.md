@@ -17,7 +17,7 @@ A lightweight, TypeScript-based HTTP server implementation built from scratch us
 - Native `net` module for TCP connections
 - Custom HTTP protocol implementation
 - Modern ES modules
-- 
+  
 ## 🚧 Coming Soon
 
 Planned features and improvements to expand the server's functionality:
