@@ -73,5 +73,3 @@ The server implements:
 ## 📝 License
 
 MIT
-
-Built with TypeScript
