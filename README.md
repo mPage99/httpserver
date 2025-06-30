@@ -45,13 +45,11 @@ httpserver/
 
 ## 🔧 Setup Instructions
 
-1. Install dependencies:
-``` 
-bash npm install
+1. Run the index.ts file.
+
+2. Communicate with the server as a client:
 ```
-2. Run the server:
-```
-bash npm start
+bash curl http://localhost:8124/     
 ``` 
 
 Server runs at: `http://localhost:8124`
