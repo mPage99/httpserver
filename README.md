@@ -74,5 +74,5 @@ The server implements:
 
 MIT
 
-Built with 💻 and TypeScript
+Built with TypeScript
 ```
