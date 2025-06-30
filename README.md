@@ -49,7 +49,7 @@ httpserver/
 
 2. Communicate with the server as a client:
 ```
-bash curl http://localhost:8124/     
+curl http://localhost:8124/     
 ``` 
 
 Server runs at: `http://localhost:8124`
