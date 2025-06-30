@@ -75,4 +75,3 @@ The server implements:
 MIT
 
 Built with TypeScript
-```
