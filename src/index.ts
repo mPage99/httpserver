@@ -4,7 +4,8 @@
 // set up the TCP server
 import net from 'node:net';
 import {RequestObjI, RequestObj} from './Request';
-import {generateResponse} from "./Response";
+import {generateResponse, InvalidRequest} from "./Response";
+import { Pages } from '../tests/schemas/routingSchemas'
 
 // create the TCP server
 const server = net.createServer((socket) => {
@@ -20,13 +21,19 @@ const server = net.createServer((socket) => {
        const requestData = data.toString().trimEnd().split("\r\n")
        let myRequest: RequestObjI = new RequestObj(requestData);
 
-       //console.log(myRequest);
-       socket.write(generateResponse((myRequest)))
+       console.log(myRequest);
+       try {
+           myRequest.requestLine.path = Pages.parse(myRequest.requestLine.path)
+       }catch (e) {
+           socket.write(InvalidRequest(myRequest))
+       }
+
+       socket.write(generateResponse(myRequest))
    });
 
    // handle server errors
    server.on('error', (err) => {
-       throw err;
+       console.log('Socket error: ', err.message)
    });
 
    // write to the stream
